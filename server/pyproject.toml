@@ -1,0 +1,17 @@
+[project]
+name = "ai-tracker-server"
+version = "0.1.0"
+description = "AI endpoints for the AI Engineer Learning Tracker"
+requires-python = ">=3.11"
+dependencies = [
+  "anthropic",
+  "fastapi",
+  "uvicorn[standard]",
+  "python-dotenv",
+]
+
+[dependency-groups]
+dev = ["pytest", "httpx"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

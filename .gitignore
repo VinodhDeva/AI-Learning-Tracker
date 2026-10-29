@@ -1,0 +1,10 @@
+node_modules
+dist
+*.local
+server/.env
+server/.venv
+__pycache__
+.pytest_cache
+.env
+*.tsbuildinfo
+.DS_Store
