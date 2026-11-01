@@ -18,7 +18,7 @@ export function ToastHost() {
           <span>{toast.message}</span>
           {toast.action && (
             <button
-              className="font-semibold text-botanical underline"
+              className="font-semibold text-tint underline"
               onClick={() => {
                 toast.action!.run();
                 showToast(null);

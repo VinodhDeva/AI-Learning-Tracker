@@ -166,7 +166,7 @@ function Tags({ tags, onChange }: { tags: string[]; onChange(tags: string[]): vo
       <h3 id="tags-h" className="mb-1 text-sm font-semibold">Tags</h3>
       <div className="flex flex-wrap items-center gap-1">
         {tags.map((t) => (
-          <span key={t} className="inline-flex items-center gap-1 rounded-full bg-botanical/50 px-2 py-0.5 text-xs">
+          <span key={t} className="inline-flex items-center gap-1 rounded-full bg-tint/50 px-2 py-0.5 text-xs">
             {t}
             <button onClick={() => onChange(tags.filter((x) => x !== t))} aria-label={`Remove tag ${t}`} className="text-muted hover:text-danger">×</button>
           </span>
@@ -202,7 +202,7 @@ function Notes({ notes, onChange }: { notes: string; onChange(notes: string): vo
               key={m}
               aria-pressed={(m === 'Preview') === preview}
               onClick={() => setPreview(m === 'Preview')}
-              className="rounded px-2 py-0.5 aria-pressed:bg-botanical"
+              className="rounded px-2 py-0.5 aria-pressed:bg-tint"
             >
               {m}
             </button>
@@ -262,7 +262,7 @@ function Resources({ task, onChange }: { task: Task; onChange(r: Task['resources
               aria-label={`Mark resource "${r.title}" ${r.done ? 'not done' : 'done'}`}
               onChange={() => onChange(task.resources.map((x) => (x.id === r.id ? { ...x, done: !x.done } : x)))}
             />
-            <span className="rounded bg-botanical/50 px-1.5 text-xs">{KIND_LABEL[r.kind]}</span>
+            <span className="rounded bg-tint/50 px-1.5 text-xs">{KIND_LABEL[r.kind]}</span>
             {r.url ? (
               <a href={r.url} target="_blank" rel="noreferrer noopener" className={`flex-1 truncate text-accent hover:underline ${r.done ? 'line-through opacity-60' : ''}`}>
                 {r.title}

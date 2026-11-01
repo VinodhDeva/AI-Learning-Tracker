@@ -56,7 +56,7 @@ export function Sortable({
       {...attributes}
       {...listeners}
       aria-label={`Reorder ${label}`}
-      className="cursor-grab touch-none rounded px-1 text-muted hover:bg-botanical/40 hover:text-ink active:cursor-grabbing"
+      className="cursor-grab touch-none rounded px-1 text-muted hover:bg-tint/40 hover:text-ink active:cursor-grabbing"
     >
       ⠿
     </button>

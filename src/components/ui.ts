@@ -1,6 +1,6 @@
 // Shared Tailwind class strings, so buttons and fields look the same everywhere.
 export const btn =
-  'inline-flex items-center gap-1 rounded-md border border-line px-2.5 py-1 text-sm hover:bg-botanical/40 disabled:opacity-50';
+  'inline-flex items-center gap-1 rounded-md border border-line px-2.5 py-1 text-sm hover:bg-tint/40 disabled:opacity-50';
 export const btnPrimary =
   'inline-flex items-center gap-1 rounded-md bg-accent px-3 py-1.5 text-sm font-medium text-on-accent hover:bg-accent-hover disabled:opacity-50';
 export const btnDanger =

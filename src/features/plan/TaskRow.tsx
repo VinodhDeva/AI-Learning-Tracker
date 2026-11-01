@@ -19,7 +19,7 @@ export function TaskRow({ task, week, index }: { task: Task; week: Week; index: 
   return (
     <Sortable as="li" id={task.id} label={`task ${task.title}`}>
       {(handle) => (
-        <div className="group flex items-center gap-2 rounded px-1 py-1 hover:bg-botanical/40">
+        <div className="group flex items-center gap-2 rounded px-1 py-1 hover:bg-tint/40">
           {handle}
           <input
             type="checkbox"
@@ -33,7 +33,7 @@ export function TaskRow({ task, week, index }: { task: Task; week: Week; index: 
             onClick={() => openTask(task.id)}
             className={`min-w-0 flex-1 truncate text-left text-sm hover:underline ${done ? 'text-muted line-through' : ''}`}
           >
-            {task.status === 'in_progress' && <span className="mr-1 text-amber-500" aria-label="In progress">●</span>}
+            {task.status === 'in_progress' && <span className="mr-1 text-coral" aria-label="In progress">●</span>}
             {task.title}
           </button>
           <span className={`hidden rounded px-1.5 text-xs sm:inline ${TYPE_COLOR[task.type]}`}>{TYPE_LABEL[task.type]}</span>

@@ -50,7 +50,7 @@ export function QuickAddAI() {
   };
 
   return (
-    <section aria-label="Add a task with AI" className="rounded-xl border border-dashed border-sage bg-surface p-3">
+    <section aria-label="Add a task with AI" className="rounded-xl border border-dashed border-teal bg-surface p-3">
       <form onSubmit={onDraft} className="flex flex-wrap gap-2">
         <input
           className={`${field} min-w-64 flex-1`}
@@ -80,7 +80,7 @@ export function QuickAddAI() {
             <span>{PRIORITY_LABEL[draft.priority]} priority</span>
             <span>· {draft.estimatedHours}h</span>
             <span>· {draft.dueDate ? `due ${format(parseISO(draft.dueDate), 'EEE, MMM d')}` : 'no due date'}</span>
-            {draft.tags.map((t) => <span key={t} className="rounded-full bg-botanical/60 px-2 text-ink">{t}</span>)}
+            {draft.tags.map((t) => <span key={t} className="rounded-full bg-tint/60 px-2 text-ink">{t}</span>)}
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <label className="flex items-center gap-2 text-xs text-muted">

@@ -45,7 +45,7 @@ export function Shell() {
                 to={n.to}
                 end
                 className={({ isActive }) =>
-                  `shrink-0 rounded px-3 py-1.5 text-sm ${isActive ? 'bg-botanical font-medium' : 'hover:bg-botanical/40'}`
+                  `shrink-0 rounded px-3 py-1.5 text-sm ${isActive ? 'bg-tint font-medium' : 'hover:bg-tint/40'}`
                 }
               >
                 {n.label}
@@ -56,7 +56,7 @@ export function Shell() {
             <Kbd>N</Kbd> new task · <Kbd>/</Kbd> search
           </span>
           <button
-            className="rounded px-2 py-1 hover:bg-botanical/40 sm:ml-auto lg:ml-0"
+            className="rounded px-2 py-1 hover:bg-tint/40 sm:ml-auto lg:ml-0"
             onClick={() => setTheme(NEXT_THEME[theme])}
             aria-label={`Theme: ${theme}. Switch to ${NEXT_THEME[theme]}`}
             title={`Theme: ${theme}`}

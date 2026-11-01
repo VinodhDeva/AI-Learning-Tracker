@@ -59,7 +59,7 @@ export function WeeklyReviewCard() {
   };
 
   return (
-    <section aria-label="Weekly review" className="min-w-0 rounded-xl border border-dashed border-sage bg-surface p-4">
+    <section aria-label="Weekly review" className="min-w-0 rounded-xl border border-dashed border-teal bg-surface p-4">
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
         <h2 className="font-semibold">Weekly review</h2>
         <button className={btn} onClick={onGenerate} disabled={busy || !week}>

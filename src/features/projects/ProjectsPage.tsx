@@ -11,7 +11,7 @@ import { STORAGE_LIMIT_CHARS, downscaleImage, storageChars } from '../../lib/ima
 const STATUS_LABEL: Record<ProjectStatus, string> = { planned: 'Planned', in_progress: 'In progress', shipped: 'Shipped' };
 const STATUS_STYLE: Record<ProjectStatus, string> = {
   planned: 'border-line',
-  in_progress: 'border-sage',
+  in_progress: 'border-teal',
   shipped: 'border-accent',
 };
 

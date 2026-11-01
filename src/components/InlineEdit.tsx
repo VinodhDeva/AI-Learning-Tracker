@@ -48,7 +48,7 @@ export function InlineEdit({ value, onSave, label, placeholder, multiline, class
         type="button"
         onClick={() => setDraft(value)}
         aria-label={`Edit ${label}: ${value || 'empty'}`}
-        className={`rounded px-1 text-left hover:bg-botanical/40 ${value ? '' : 'italic text-muted'} ${className}`}
+        className={`rounded px-1 text-left hover:bg-tint/40 ${value ? '' : 'italic text-muted'} ${className}`}
       >
         {value || placeholder || `Add ${label.toLowerCase()}`}
       </button>

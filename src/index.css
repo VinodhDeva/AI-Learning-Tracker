@@ -9,34 +9,36 @@
  */
 :root {
   color-scheme: light;
-  --canvas: #f4efe3;      /* cream background */
-  --surface: #fffdf7;     /* warm white */
-  --ink: #30241f;         /* dark brown */
-  --muted: #726760;       /* muted brown #786D66, darkened slightly to reach 4.5:1 on cream */
-  --line: #d9d1c5;        /* input border */
-  --placeholder: #aaa198;
-  --accent: #365441;      /* forest green */
-  --accent-hover: #52705a; /* medium green */
-  --on-accent: #fffdf7;
-  --sage: #9bb09d;
-  --botanical: #c8d4c4;   /* light botanical green: subtle fills, hover */
-  --danger: #b91c1c;
+  --canvas: #fff4ea;       /* warm peach */
+  --surface: #fffbf7;      /* lighter peach for cards */
+  --ink: #352c57;          /* deep purple text */
+  --muted: #6b6390;        /* softened purple, 5:1 on peach */
+  --line: #ebdccd;
+  --placeholder: #9c93b5;
+  --accent: #6558d3;       /* vibrant violet */
+  --accent-hover: #5246c0;
+  --on-accent: #ffffff;
+  --teal: #31c4be;         /* teal accent: borders and fills, too light for text */
+  --coral: #e56787;        /* coral pink: fills and borders, too light for text */
+  --tint: #ece8fb;         /* light violet: subtle fills, hover */
+  --danger: #c2385e;       /* coral darkened to reach 4.5:1 for text */
 }
 
 :root.dark {
   color-scheme: dark;
-  --canvas: #1c1714;
-  --surface: #2a211c;
-  --ink: #f4efe3;
-  --muted: #b5aba2;
-  --line: #463a33;
-  --placeholder: #8a8078;
-  --accent: #9bb09d;
-  --accent-hover: #c8d4c4;
-  --on-accent: #1c1714;
-  --sage: #9bb09d;
-  --botanical: #36443a;
-  --danger: #f87171;
+  --canvas: #1e1a2e;
+  --surface: #29233f;
+  --ink: #fff4ea;
+  --muted: #b9b1d3;
+  --line: #3d3558;
+  --placeholder: #8a82a8;
+  --accent: #9d94f0;
+  --accent-hover: #b8b1f5;
+  --on-accent: #1e1a2e;
+  --teal: #31c4be;
+  --coral: #e56787;
+  --tint: #3a3160;
+  --danger: #f08aa4;
 }
 
 @theme inline {
@@ -49,8 +51,9 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-on-accent: var(--on-accent);
-  --color-sage: var(--sage);
-  --color-botanical: var(--botanical);
+  --color-teal: var(--teal);
+  --color-coral: var(--coral);
+  --color-tint: var(--tint);
   --color-danger: var(--danger);
 }
 
@@ -64,8 +67,8 @@ body { @apply bg-canvas text-ink; }
 .md ul { @apply list-disc pl-5; }
 .md ol { @apply list-decimal pl-5; }
 .md a { @apply text-accent underline; }
-.md code { @apply rounded bg-botanical/50 px-1 text-[0.85em]; }
-.md pre { @apply overflow-x-auto rounded bg-botanical/50 p-2; }
+.md code { @apply rounded bg-tint/50 px-1 text-[0.85em]; }
+.md pre { @apply overflow-x-auto rounded bg-tint/50 p-2; }
 .md pre code { @apply bg-transparent p-0; }
 .md blockquote { @apply border-l-4 border-line pl-3 text-muted; }
 

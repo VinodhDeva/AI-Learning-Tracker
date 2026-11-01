@@ -6,7 +6,7 @@ export function ExpandButton({ open, controls, label, onToggle }: { open: boolea
       aria-expanded={open}
       aria-controls={controls}
       aria-label={`${open ? 'Collapse' : 'Expand'} ${label}`}
-      className="w-6 rounded text-muted hover:bg-botanical"
+      className="w-6 rounded text-muted hover:bg-tint"
     >
       <span aria-hidden className={`inline-block transition-transform ${open ? 'rotate-90' : ''}`}>▶</span>
     </button>
